@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-24 03:10:59 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMjQ7MDI6Mzg6NDUgUE07MjUwNw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMjQ7MDM6MTA6NTkgUE07MTsyNjEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1, number2, answer" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the first number.&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Enter the second number.&quot;" newline="True"/>
+            <input variable="number2"/>
+            <assign variable="answer" expression="number1 + number2"/>
+            <output expression="&quot;The sum is &quot;&amp;answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

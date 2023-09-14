@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-07 09:44:39 AM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDM7MDU6NTA6MDQgUE07MjQ5Nw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDc7MDk6NDQ6MzkgQU07MjsyNjEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number to check if it is prime.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="d" expression="2"/>
+            <while expression="n&gt;d">
+                <if expression="n%d=0">
+                    <then>
+                        <output expression="n&amp;&quot; is not prime.&quot;" newline="True"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else>
+                        <assign variable="d" expression="d+1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="n&amp;&quot; is prime.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-31 02:26:20 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMzE7MDI6MTU6MzMgUE07MjQ5Nw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMzE7MDI6MjY6MjAgUE07MTsyNjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, fx" type="Real" array="False" size=""/>
+            <output expression="&quot;f(x) = x^4 + 3x^3 + 2x + 5.&quot;" newline="True"/>
+            <output expression="&quot;Enter the value of x.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="fx" expression="x^4 + 3*x^3 + 2*x + 5"/>
+            <output expression="&quot;f(&quot;&amp;x&amp;&quot;) = &quot;&amp;fx&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

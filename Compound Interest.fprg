@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-14 03:22:16 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTQ7MDI6NTU6MTggUE07MjUwNg=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTQ7MDM6MjI6MTYgUE07MTsyNjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, t, r, a, q" type="Real" array="False" size=""/>
+            <output expression="&quot;This algorithm generates the amount a principal compounds to for a given rate after the given number of years.&quot;" newline="True"/>
+            <do expression="q&gt;3">
+                <output expression="&quot;Enter the principal.&quot;" newline="True"/>
+                <input variable="p"/>
+                <output expression="&quot;Enter the rate of interest.&quot;" newline="True"/>
+                <input variable="r"/>
+                <output expression="&quot;Enter the duration in years.&quot;" newline="True"/>
+                <input variable="t"/>
+                <output expression="&quot;Enter 1 if the principal is compounded yearly, 2 if it is compounded half-yearly or 3 if it is compounded quarterly.&quot;" newline="True"/>
+                <input variable="q"/>
+                <if expression="q==1">
+                    <then>
+                        <assign variable="a" expression="p*((100+r)/100)^t"/>
+                        <output expression="&quot;Rs. &quot;&amp;p&amp;&quot; amounts to Rs. &quot;&amp;a&amp;&quot;.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="q==2">
+                            <then>
+                                <assign variable="a" expression="p*((100+r)/100)^(2*t)"/>
+                                <output expression="&quot;Rs. &quot;&amp;p&amp;&quot; amounts to Rs. &quot;&amp;a&amp;&quot;.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="q==3">
+                                    <then>
+                                        <assign variable="a" expression="p*((100+r)/100)^(4*t)"/>
+                                        <output expression="&quot;Rs. &quot;&amp;p&amp;&quot; amounts to Rs. &quot;&amp;a&amp;&quot;.&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <output expression="&quot;Invalid response.&quot;" newline="True"/>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

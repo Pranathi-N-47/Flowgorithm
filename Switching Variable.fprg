@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-05 02:46:04 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDU7MDI6MzY6MDggUE07MjUwNA=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDU7MDI6NDY6MDQgUE07MTsyNjA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter x.&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Enter y.&quot;" newline="True"/>
+            <input variable="y"/>
+            <assign variable="x" expression="x-y"/>
+            <assign variable="y" expression="x+y"/>
+            <assign variable="x" expression="y-x"/>
+            <output expression="&quot;x = &quot;&amp;x&amp;&quot; and y = &quot;&amp;y&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-14 02:45:30 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTQ7MDI6Mzk6MzYgUE07MjUwOA=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTQ7MDI6NDU6MzAgUE07MTsyNjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;This algorithm generates the factors of a number. Enter the number.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="d" expression="1"/>
+            <do expression="d&lt;=n">
+                <if expression="n%d==0">
+                    <then>
+                        <output expression="d" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="d" expression="d+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

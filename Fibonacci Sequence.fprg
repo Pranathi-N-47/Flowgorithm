@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-10 05:15:01 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDc7MDM6MTY6NTEgUE07MjUwMw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTA7MDU6MTU6MDEgUE07NDsyNjA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, d, m" type="Integer" array="False" size=""/>
+            <output expression="&quot;This algorithm generates a customised Fibonacci sequence. Enter the first term.&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Enter the second term.&quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;Enter the number of terms to be generated.&quot;" newline="True"/>
+            <input variable="d"/>
+            <do expression="d != 0">
+                <output expression="n" newline="True"/>
+                <assign variable="d" expression="d-1"/>
+                <output expression="m" newline="True"/>
+                <assign variable="d" expression="d-1"/>
+                <assign variable="n" expression="n + m"/>
+                <assign variable="m" expression="m + n"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

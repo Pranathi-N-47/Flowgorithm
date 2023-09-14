@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-27 01:39:18 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMjQ7MDI6Mzg6NDUgUE07MjUwNw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMjc7MDE6Mzk6MTggUE07MzsyNjIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1, number2, answer, choice" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the first number.&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;Enter the second number.&quot;" newline="True"/>
+            <input variable="number2"/>
+            <output expression="&quot;Enter 1 for addition, 2 for subtraction, 3 for multiplication and 4 for division.&quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice==1">
+                <then>
+                    <assign variable="answer" expression="number1 + number2"/>
+                </then>
+                <else>
+                    <if expression="choice==2">
+                        <then>
+                            <assign variable="answer" expression="number1 - number2"/>
+                        </then>
+                        <else>
+                            <if expression="choice==1">
+                                <then>
+                                    <assign variable="answer" expression="number1 * number2"/>
+                                </then>
+                                <else>
+                                    <if expression="choice==4">
+                                        <then>
+                                            <assign variable="answer" expression="number1 / number2"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;You did not enter a number between 1 and 4. Now rerun the program you little shit&quot;" newline="True"/>
+                                            <breakpoint expression="" always="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;The answer is &quot;&amp;answer" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

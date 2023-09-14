@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-31 03:12:06 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMzE7MDI6MjY6MjYgUE07MjUwMQ=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDgtMzE7MDM6MTI6MDYgUE07MTsyNjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, a, b, c, d, e, f, y" type="Real" array="False" size=""/>
+            <output expression="&quot;The polynomial f(x) is of degree 5. Enter 0 to omit the desired term. &quot;" newline="False"/>
+            <output expression="&quot;Enter the coefficient of x^5.&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the coefficient of x^4.&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the coefficient of x^3.&quot;" newline="True"/>
+            <input variable="c"/>
+            <output expression="&quot;Enter the coefficient of x^2.&quot;" newline="True"/>
+            <input variable="d"/>
+            <output expression="&quot;Enter the coefficient of x.&quot;" newline="True"/>
+            <input variable="e"/>
+            <output expression="&quot;Enter the constant term.&quot;" newline="True"/>
+            <input variable="f"/>
+            <output expression="&quot;Enter the value of x.&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="y" expression="a*x^5 + b*x^4 + c*x^3 + d*x^2 + e*x + f"/>
+            <output expression="&quot;f(&quot;&amp;x&amp;&quot;) = &quot;&amp;y&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="function" type="Real" variable="y">
+        <parameters/>
+        <body>
+            <declare name="y" type="Real" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>

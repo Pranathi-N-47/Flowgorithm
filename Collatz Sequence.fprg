@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-10 05:22:37 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDc7MDI6Mjk6MzEgUE07MjUwNA=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMTA7MDU6MjI6MzcgUE07NDsyNjEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, d" type="Integer" array="False" size=""/>
+            <output expression="&quot;This algorithm generates the Collatz sequence for the given number. Enter your number.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="d" expression="0"/>
+            <while expression="n != 1">
+                <if expression="n%2==0">
+                    <then>
+                        <output expression="n/2" newline="True"/>
+                        <assign variable="n" expression="n/2"/>
+                        <assign variable="d" expression="d+1"/>
+                    </then>
+                    <else>
+                        <output expression="3*n + 1" newline="True"/>
+                        <assign variable="n" expression="3*n + 1"/>
+                        <assign variable="d" expression="d+1"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;This sequence terminates after &quot;&amp;d&amp;&quot; iterations.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-07 10:03:31 AM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDc7MDk6NDQ6NDAgQU07MjQ5Mw=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC0wUTZIVU9HOzIwMjMtMDktMDc7MTA6MDM6MzEgQU07MjsyNTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, d, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;This algorithm calculates factorials. Enter your number.&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="f" expression="n*(n-1)"/>
+            <for variable="d" start="n-2" end="1" direction="dec" step="1">
+                <assign variable="f" expression="f*d"/>
+            </for>
+            <output expression="n&amp;&quot;! = &quot;&amp;f&amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
